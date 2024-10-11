@@ -1,0 +1,21 @@
+#pic {
+    border: 1px solid #e30505;
+    width: 364px;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.space {
+    margin-top: 100px;
+}
+
+nav a {
+    color: #4c3e3e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e30505;
+}
