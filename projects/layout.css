@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 850px;
+    margin: 0 auto;
+    border: solid #333;
+    content: normal;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Georgia', serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+main {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-image: url('/projects/photo-tour/img/avatar.jpg');
+    background-size: 10px 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#textbox {
+    text-align: center;
+    width: 20%;
+    background-color: rgb(0, 193, 160);
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
