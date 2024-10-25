@@ -22,3 +22,24 @@
     font-size: 18px;
     color: #008b43;
 }
+
+.answer {
+    color: rgb(13, 0, 201);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-center {
+        order: -1;
+    }
+}
