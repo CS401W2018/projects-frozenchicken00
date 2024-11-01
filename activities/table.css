@@ -1,5 +1,21 @@
-table,
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
 th,
 td {
-    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+}
+
+tbody td:nth-child(odd),
+tbody th:nth-child(odd) {
+    background-color: #D6EEEE;
+}
+
+
+tr:hover {
+    background-color: rgb(215, 249, 208);
 }
