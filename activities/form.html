@@ -21,40 +21,49 @@
     </header>
 
     <main>
-        <form action="form.html" method="post">
-            <label for="first">First name:</label>
-            <input type="text" id="first" name="first">
-            <br>
+        <form action="form.html" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-row">
+                    <label for="first">First name:</label>
+                    <input type="text" id="first" name="first">
+                </div>
 
-            <label for="last">Last name:</label>
-            <input type="text" id="last" name="last">
-            <br>
+                <div class="form-row">
+                    <label for="last">Last name:</label>
+                    <input type="text" id="last" name="last">
+                </div>
 
-            <label for="password">password:</label>
-            <input type="password" id="password" name="password">
-            <br>
+                <div class="form-row">
+                    <label for="id">ID#:</label>
+                    <input type="text" id="id" name="id">
+                </div>
+            </fieldset>
 
-            <label for="file"> File: </label>
-            <input type="file" id="file" name="file">
-            <br>
+            <fieldset>
+                <legend>Academic Information</legend>
+                <div class="form-row">
+                    <span class="year">Year:</span>
+                    <label><input type="radio" name="year" value="freshman">freshman</label>
+                    <label><input type="radio" name="year" value="sophomore">sophomore</label>
+                </div>
 
-            <label for="gsearch">Search Google:</label>
-            <input type="search" id="gsearch" name="gsearch">
-            <br>
+                <div class="form-row">
+                    <label for="classes">Class:</label>
+                    <select id="classes" name="classes">
+                        <option value="101">CS 101</option>
+                        <option value="102">CS 102</option>
+                        <option value="103">CS 103</option>
+                        <option value="104">CS 104</option>
+                    </select>
+                </div>
+            </fieldset>
 
-            <label for="color">color:</label>
-            <input type="color" id="color" name="color">
-            <br>
-
-            <input type="submit" value="Submit">
+            <input class="space" type="submit" value="Submit">
         </form>
 
-        <p>1. The form tag has an "action" attribute. What does it do?: Say where to send the form data when it is
-            submitted</p>
-        <p>2. The form tag has a "method" attribute. What does it do?: Say the HTTP method to use when sending form-data
-        </p>
-        <p>3. What is the difference between a "POST" and a "GET"?: Use GET when you want to retrieve data and use POST
-            when you want to submit data but in terms of security, they are same.</p>
+        <p>1. What are different ways to style your form? </p>
+        <p>2. Why does the professor like to use flex? </p>
     </main>
 
     <footer>

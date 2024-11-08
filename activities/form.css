@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+fieldset {
+    box-shadow: 0 0 0 1px #e8e8e8;
+    background-color: rgb(255, 248, 223);
+    margin-top: 10px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-row label {
+    width: 102px;
+    text-align: right;
+}
+
+.form-row input {
+    border-radius: 10px;
+}
+
+.year {
+    text-align: right;
+    width: 102px;
+}
+
+.space {
+    margin-top: 10px;
+}
