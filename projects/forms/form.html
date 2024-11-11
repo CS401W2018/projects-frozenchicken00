@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <h1>MBTI Personality Test</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Form</a></li>
+                <li><a href="#">List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="form.html" method="get">
+            <fieldset>
+                <legend class="info">Personal Information</legend>
+                <div class="form-row">
+                    <label for="first">First name:</label>
+                    <input type="text" id="first" name="first">
+                </div>
+
+                <div class="form-row">
+                    <label for="last">Last name:</label>
+                    <input type="text" id="last" name="last">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Passcode:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age Group:</label>
+                    <select id="age" name="age">
+                        <option value="">Select age group</option>
+                        <option value="teens">13-19</option>
+                        <option value="twenties">20-29</option>
+                        <option value="thirties">30-39</option>
+                        <option value="forties">40+</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="mbti">
+                <legend class="question">You regularly make new friends.</legend>
+                <div class="radio-group">
+                    <span>Agree</span>
+                    <input type="radio" name="friends" id="r1" value="1">
+                    <input type="radio" name="friends" id="r2" value="2">
+                    <input type="radio" name="friends" id="r3" value="3">
+                    <input type="radio" name="friends" id="r4" value="4">
+                    <input type="radio" name="friends" id="r5" value="5">
+                    <span>Disagree</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="mbti">
+                <legend class="question">Your living and working spaces are clean and organized.
+                </legend>
+                <div class="radio-group">
+                    <span>Agree</span>
+                    <input type="radio" name="clean" id="ra" value="1">
+                    <input type="radio" name="clean" id="rb" value="2">
+                    <input type="radio" name="clean" id="rc" value="3">
+                    <input type="radio" name="clean" id="rd" value="4">
+                    <input type="radio" name="clean" id="re" value="5">
+                    <span>Disagree</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="mbti">
+                <legend class="question">You usually stay calm, even under a lot of pressure.
+                </legend>
+                <div class="radio-group">
+                    <span>Agree</span>
+                    <input type="radio" name="calm" id="rf" value="1">
+                    <input type="radio" name="calm" id="rg" value="2">
+                    <input type="radio" name="calm" id="rh" value="3">
+                    <input type="radio" name="calm" id="ri" value="4">
+                    <input type="radio" name="calm" id="rj" value="5">
+                    <span>Disagree</span>
+                </div>
+            </fieldset>
+
+            <fieldset class="mbti">
+                <legend class="question">People’s stories and emotions speak louder to you than numbers or data.
+                </legend>
+                <div class="radio-group">
+                    <span>Agree</span>
+                    <input type="radio" name="emotions" id="rk" value="1">
+                    <input type="radio" name="emotions" id="rl" value="2">
+                    <input type="radio" name="emotions" id="rm" value="3">
+                    <input type="radio" name="emotions" id="rn" value="4">
+                    <input type="radio" name="emotions" id="ro" value="5">
+
+                    <span>Disagree</span>
+                </div>
+            </fieldset>
+
+            <div class="form-row checkbox-row">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="terms" required>
+                    I agree to receive information from MBTI Test through Email.
+                </label>
+            </div>
+
+            <button type="submit" class="submit">Submit Test</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Hoyoung Kim 2024</p>
+    </footer>
+</body>
+
+</html>
