@@ -21,7 +21,7 @@
     </header>
 
     <main>
-        <form action="form.html" method="get">
+        <form action="form.html" method="post" id="form">
             <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-row">
@@ -62,13 +62,52 @@
             <input class="space" type="submit" value="Submit">
         </form>
 
-        <p>1. What are different ways to style your form?</p>
-        <p>2. Why does the professor like to use flex? </p>
+        <p>
+            1. What is JavaScript? How did it get its name?: A programming language that can run on browser. It is
+            introduced portray the new language as a supporting scripting language to Java.
+        </p>
+
+        <p>
+            2. What are the two ways you can run JavaScript?: Both Client-side and server-side
+        </p>
+
+        <p>
+            3. What was the most popular front-end js library?: jQuery
+        </p>
+
+        <p>
+            4. What is the most popular front-end js library today?: React
+        </p>
     </main>
 
     <footer>
         <p>&copy; Hoyoung Kim 2024</p>
     </footer>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const first = document.getElementById('first').value;
+            console.log(first);
+            const last = document.getElementById('last').value;
+            console.log(last);
+            const id = document.getElementById('id').value;
+            console.log(id);
+            const classes = document.getElementById('classes').value;
+            console.log(classes);
+            const fullname = (first + ' ' + last);
+            if (!first || !last || !id) {
+                alert('Please fill out all fields');
+                return;
+            }
+            if (!classes) {
+                alert('Please select a class');
+                return;
+            }
+            console.log(fullname);
+            alert('Form submitted');
+        });
+    </script>
 </body>
 
 </html>
