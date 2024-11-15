@@ -21,6 +21,7 @@
     </header>
 
     <main>
+        <div id="message"></div>
         <form action="form.html" method="post" id="form">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -44,8 +45,8 @@
                 <legend>Academic Information</legend>
                 <div class="form-row">
                     <span class="year">Year:</span>
-                    <label><input type="radio" name="year" value="freshman">freshman</label>
-                    <label><input type="radio" name="year" value="sophomore">sophomore</label>
+                    <label><input type="radio" id="year" name="year" value="freshman">freshman</label>
+                    <label><input type="radio" id="year" name="year" value="sophomore">sophomore</label>
                 </div>
 
                 <div class="form-row">
@@ -63,20 +64,11 @@
         </form>
 
         <p>
-            1. What is JavaScript? How did it get its name?: A programming language that can run on browser. It is
-            introduced portray the new language as a supporting scripting language to Java.
+            1. What is AJAX?: Asynchronous JavaScript and XML
         </p>
 
         <p>
-            2. What are the two ways you can run JavaScript?: Both Client-side and server-side
-        </p>
-
-        <p>
-            3. What was the most popular front-end js library?: jQuery
-        </p>
-
-        <p>
-            4. What is the most popular front-end js library today?: React
+            2. Why do you put your JS Code in a separate file?: t makes HTML and JavaScript easier to read and maintain.
         </p>
     </main>
 
@@ -84,30 +76,7 @@
         <p>&copy; Hoyoung Kim 2024</p>
     </footer>
 
-    <script>
-        document.getElementById('form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            const first = document.getElementById('first').value;
-            console.log(first);
-            const last = document.getElementById('last').value;
-            console.log(last);
-            const id = document.getElementById('id').value;
-            console.log(id);
-            const classes = document.getElementById('classes').value;
-            console.log(classes);
-            const fullname = (first + ' ' + last);
-            if (!first || !last || !id) {
-                alert('Please fill out all fields');
-                return;
-            }
-            if (!classes) {
-                alert('Please select a class');
-                return;
-            }
-            console.log(fullname);
-            alert('Form submitted');
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 
 </html>
