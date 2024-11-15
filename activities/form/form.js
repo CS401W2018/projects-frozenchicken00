@@ -9,9 +9,6 @@ document.getElementById('form').addEventListener('submit', function (event) {
     const id = document.getElementById('id').value;
     console.log(id);
 
-    const year = document.getElementById('year').value;
-    console.log(year);
-
     const classes = document.getElementById('classes').value;
     console.log(classes);
 
