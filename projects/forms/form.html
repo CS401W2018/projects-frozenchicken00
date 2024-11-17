@@ -21,7 +21,7 @@
     </header>
 
     <main>
-        <form action="form.html" method="get">
+        <form action="form.html" method="get" id="form">
             <fieldset>
                 <legend class="info">Personal Information</legend>
                 <div class="form-row">
@@ -65,11 +65,11 @@
                 <legend class="question">You regularly make new friends.</legend>
                 <div class="radio-group">
                     <span>Agree</span>
-                    <input type="radio" name="friends" id="r1" value="1">
-                    <input type="radio" name="friends" id="r2" value="2">
-                    <input type="radio" name="friends" id="r3" value="3">
-                    <input type="radio" name="friends" id="r4" value="4">
-                    <input type="radio" name="friends" id="r5" value="5">
+                    <input type="radio" name="friends" id="r1" value="strongly-agree">
+                    <input type="radio" name="friends" id="r2" value="agree">
+                    <input type="radio" name="friends" id="r3" value="in-the-middle">
+                    <input type="radio" name="friends" id="r4" value="disagree">
+                    <input type="radio" name="friends" id="r5" value="strongly-disagree">
                     <span>Disagree</span>
                 </div>
             </fieldset>
@@ -79,11 +79,11 @@
                 </legend>
                 <div class="radio-group">
                     <span>Agree</span>
-                    <input type="radio" name="clean" id="ra" value="1">
-                    <input type="radio" name="clean" id="rb" value="2">
-                    <input type="radio" name="clean" id="rc" value="3">
-                    <input type="radio" name="clean" id="rd" value="4">
-                    <input type="radio" name="clean" id="re" value="5">
+                    <input type="radio" name="clean" id="ra" value="strongly-agree">
+                    <input type="radio" name="clean" id="rb" value="agree">
+                    <input type="radio" name="clean" id="rc" value="in-the-middle">
+                    <input type="radio" name="clean" id="rd" value="disagree">
+                    <input type="radio" name="clean" id="re" value="strongly-disagree">
                     <span>Disagree</span>
                 </div>
             </fieldset>
@@ -93,11 +93,11 @@
                 </legend>
                 <div class="radio-group">
                     <span>Agree</span>
-                    <input type="radio" name="calm" id="rf" value="1">
-                    <input type="radio" name="calm" id="rg" value="2">
-                    <input type="radio" name="calm" id="rh" value="3">
-                    <input type="radio" name="calm" id="ri" value="4">
-                    <input type="radio" name="calm" id="rj" value="5">
+                    <input type="radio" name="calm" id="rf" value="strongly-agree">
+                    <input type="radio" name="calm" id="rg" value="agree">
+                    <input type="radio" name="calm" id="rh" value="in-the-middle">
+                    <input type="radio" name="calm" id="ri" value="disagree">
+                    <input type="radio" name="calm" id="rj" value="strongly-disagree">
                     <span>Disagree</span>
                 </div>
             </fieldset>
@@ -107,11 +107,11 @@
                 </legend>
                 <div class="radio-group">
                     <span>Agree</span>
-                    <input type="radio" name="emotions" id="rk" value="1">
-                    <input type="radio" name="emotions" id="rl" value="2">
-                    <input type="radio" name="emotions" id="rm" value="3">
-                    <input type="radio" name="emotions" id="rn" value="4">
-                    <input type="radio" name="emotions" id="ro" value="5">
+                    <input type="radio" name="emotions" id="rk" value="strongly-agree">
+                    <input type="radio" name="emotions" id="rl" value="agree">
+                    <input type="radio" name="emotions" id="rm" value="in-the-middle">
+                    <input type="radio" name="emotions" id="rn" value="disagree">
+                    <input type="radio" name="emotions" id="ro" value="strongly-disagree">
 
                     <span>Disagree</span>
                 </div>
@@ -126,11 +126,14 @@
 
             <button type="submit" class="submit">Submit Test</button>
         </form>
+        <div id="message"></div>
     </main>
 
     <footer>
         <p>&copy; Hoyoung Kim 2024</p>
     </footer>
+
+    <script src="form.js"></script>
 </body>
 
 </html>
