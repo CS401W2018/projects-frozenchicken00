@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share your cat</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <header>
+        <h1>Share your cat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="dan-pic.html">Home</a></li>
+            <li><a href="dan-info.html">Dan</a></li>
+            <li><a href="dan-food-table.html">Food</a></li>
+            <li><a href="name.html">Name</a></li>
+            <li><a href="color.html">Color</a></li>
+            <li><a href="breed.html">Breed</a></li>
+            <li><a href="share-your-cat-form.html" class="active">Share</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="form.html" method="get" id="form">
+            <fieldset>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-row">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+
+                <div class="form-row">
+                    <label for="fav">Favorite food:</label>
+                    <input type="text" id="fav" name="fav">
+                </div>
+
+                <div class="form-row">
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color">
+                </div>
+
+                <div class="form-row">
+                    <label for="breed">Breed:</label>
+                    <input type="text" id="breed" name="breed">
+                </div>
+
+                <div class="form-row">
+                    <label for="file">Photo:</label>
+                    <input id="file" type="file" />
+                </div>
+
+                <button type="submit" class="submit">Submit</button>
+            </fieldset>
+        </form>
+        <div id="message"></div>
+    </main>
+
+    <footer>
+        &copy; Hoyoung Kim 2024
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+
+</html>
