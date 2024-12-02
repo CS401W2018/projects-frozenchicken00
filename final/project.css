@@ -68,7 +68,7 @@ main {
 }
 
 table {
-    width: 70%;
+    width: 80%;
     border-collapse: collapse;
     margin: 20px 0;
 }
@@ -152,7 +152,7 @@ input[type="file"] {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 15px;
-    background-color: #fff8eb;
+    background-color: #fffcf7;
 }
 
 .submit {
@@ -199,6 +199,71 @@ input[type="file"] {
 
 #orange {
     color: orange;
+}
+
+.breed-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.breed-card {
+    background-color: #fff8eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.breed-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.breed-card h4 {
+    color: #de4e4e;
+    margin: -1.5rem;
+    margin-left: -1px;
+}
+
+.name-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.popular {
+    background-color: #fff8eb;
+    border-radius: 12px;
+    border: 2px solid #ffaa00;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.trending {
+    background-color: #fff8eb;
+    border-radius: 12px;
+    border: 2px solid #9fa5f2;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.popular li,
+.trending li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    counter-increment: list-item;
+}
+
+.popular li::before,
+.trending li::before {
+    content: counter(list-item) ".";
+    margin-right: 10px;
 }
 
 footer {
