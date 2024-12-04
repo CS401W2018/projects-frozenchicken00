@@ -55,6 +55,7 @@ main {
     gap: 1rem;
     margin-right: 2rem;
     margin-left: 2rem;
+    margin-top: 1rem
 }
 
 .pic {
@@ -264,6 +265,35 @@ input[type="file"] {
 .trending li::before {
     content: counter(list-item) ".";
     margin-right: 10px;
+}
+
+.source {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.breed-card .source {
+    margin-top: 0.5rem;
+}
+
+td .source {
+    display: block;
+    margin-top: 5px;
+}
+
+.source a {
+    color: #de4e4e;
+    text-decoration: none;
+}
+
+.source a:hover {
+    text-decoration: underline;
+}
+
+#center {
+    text-align: center;
 }
 
 footer {
